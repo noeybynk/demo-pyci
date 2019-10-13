@@ -10,4 +10,3 @@ git:
 
 script:
   - python -m unittest discover -p "*_test.py"
-  - make test
