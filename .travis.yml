@@ -6,5 +6,8 @@ git:
   depth: 50
   branches: master
 
+install:
+  - pip install -r requirements.txt
+
 script:
   - python -m unittest -p "*_test.py"
