@@ -4,7 +4,12 @@ python: "3.7.1"
 
 git:
   depth: 50
-  branches: master
+  branches: 
+    only:
+      - master
 
+install:
+  - ./.travis/install
+  
 script:
   - python -m unittest -p "*_test.py"
